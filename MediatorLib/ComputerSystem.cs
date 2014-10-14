@@ -9,7 +9,13 @@ namespace MediatorLib
 {
     public class ComputerSystem
     {
+        private Keyboard _keyboard;
         private Screen _screen;
+
+        internal void RegisterKeyboard(Keyboard keyboard)
+        {
+            _keyboard = keyboard;
+        }
 
         internal void RegisterScreen(Screen screen)
         {
@@ -18,11 +24,15 @@ namespace MediatorLib
 
         internal void ComputerSwitchedOn()
         {
+            _keyboard.Enabled();
+            _screen.TurnOn();
             Debug.WriteLine("Copmuter is switched on");
         }
 
         internal void ComputerSwitchedOff()
         {
+            _keyboard.Disabled();
+            _screen.TurnOff();
             Debug.WriteLine("Copmuter is switched off");
         }
 

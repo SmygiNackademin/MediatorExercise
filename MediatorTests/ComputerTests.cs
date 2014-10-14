@@ -18,13 +18,7 @@ namespace MediatorTests
 
             // ACT
             aComputer.SwitchOn();
-            aScreen.TurnOn();
-
-            aKeyboard.Enabled();
             aKeyboard.KeyPressed('e');
-
-            aKeyboard.Disabled();
-            aScreen.TurnOff();
             aComputer.SwitchOff();
 
             // ASSERT

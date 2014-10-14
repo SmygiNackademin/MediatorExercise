@@ -14,6 +14,7 @@ namespace MediatorLib
         public Keyboard(ComputerSystem mediator)
         {
             _mediator = mediator;
+            _mediator.RegisterKeyboard(this);
         }
 
         public void Enabled()
