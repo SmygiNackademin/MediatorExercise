@@ -13,7 +13,9 @@ namespace MediatorTests
             // ARRANGE
             ComputerSystem aComputerSystem = new ComputerSystem();
             Computer aComputer = new Computer(aComputerSystem);
+            
             // ACT
+            aComputer.SwitchOn();
 
             // ASSERT
         }
