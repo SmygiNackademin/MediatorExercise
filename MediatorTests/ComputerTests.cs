@@ -19,6 +19,7 @@ namespace MediatorTests
             aComputer.SwitchOn();
             aComputer.SwitchOff();
             aKeyboard.Enabled();
+            aKeyboard.Disabled();
 
             // ASSERT
         }

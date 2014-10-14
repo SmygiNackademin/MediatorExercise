@@ -20,5 +20,10 @@ namespace MediatorLib
         {
             Debug.WriteLine("Keyboard is enabled");
         }
+
+        public void Disabled()
+        {
+            Debug.WriteLine("Keyboard is disabled");
+        }
     }
 }
