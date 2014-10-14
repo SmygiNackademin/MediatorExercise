@@ -16,6 +16,7 @@ namespace MediatorTests
             
             // ACT
             aComputer.SwitchOn();
+            aComputer.SwitchOff();
 
             // ASSERT
         }

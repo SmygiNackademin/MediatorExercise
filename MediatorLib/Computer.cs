@@ -19,5 +19,10 @@ namespace MediatorLib
         {
             _mediator.ComputerSwitchedOn();
         }
+
+        public void SwitchOff()
+        {
+            _mediator.ComputerSwitchedOff();
+        }
     }
 }

@@ -13,5 +13,10 @@ namespace MediatorLib
         {
             Debug.WriteLine("Copmuter is switched on");
         }
+
+        internal void ComputerSwitchedOff()
+        {
+            Debug.WriteLine("Copmuter is switched off");
+        }
     }
 }
