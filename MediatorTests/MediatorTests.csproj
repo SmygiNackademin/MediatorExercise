@@ -53,6 +53,15 @@
     <Compile Include="ComputerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MediatorLib\MediatorLib.csproj">
+      <Project>{1ad2cf3f-3350-46ec-9083-810fd2e1212a}</Project>
+      <Name>MediatorLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
