@@ -9,9 +9,11 @@ namespace MediatorLib
 {
     public class Screen
     {
+        private ComputerSystem _mediator;
         public Screen(ComputerSystem mediator)
         {
-
+            _mediator = mediator;
+            _mediator.RegisterScreen(this);
         }
 
         public void TurnOn()
@@ -22,6 +24,11 @@ namespace MediatorLib
         public void TurnOff()
         {
             Debug.WriteLine("Screen is turned off");
+        }
+
+        public void DisplayCharacter(char key)
+        {
+            Debug.WriteLine(key);
         }
     }
 }

@@ -26,9 +26,9 @@ namespace MediatorLib
             Debug.WriteLine("Keyboard is disabled");
         }
 
-        public void KeyPressed()
+        public void KeyPressed(char key)
         {
-            _mediator.KeyboardKeyPressed();
+            _mediator.KeyboardKeyPressed(key);
         }
     }
 }

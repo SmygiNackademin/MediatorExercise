@@ -18,14 +18,14 @@ namespace MediatorTests
 
             // ACT
             aComputer.SwitchOn();
-            aComputer.SwitchOff();
-            
-            aKeyboard.Enabled();
-            aKeyboard.Disabled();
-            aKeyboard.KeyPressed();
-
             aScreen.TurnOn();
+
+            aKeyboard.Enabled();
+            aKeyboard.KeyPressed('e');
+
+            aKeyboard.Disabled();
             aScreen.TurnOff();
+            aComputer.SwitchOff();
 
             // ASSERT
         }
