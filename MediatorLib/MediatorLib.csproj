@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Computer.cs" />
     <Compile Include="ComputerSystem.cs" />
+    <Compile Include="Keyboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
