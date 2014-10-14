@@ -18,5 +18,10 @@ namespace MediatorLib
         {
             Debug.WriteLine("Copmuter is switched off");
         }
+
+        internal void KeyboardKeyPressed()
+        {
+            Debug.WriteLine("Keyboard key is pressed");
+        }
     }
 }
