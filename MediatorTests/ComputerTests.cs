@@ -10,7 +10,12 @@ namespace MediatorTests
         [TestMethod]
         public void Test_That_Computer_Works()
         {
-            ComputerSystem aComputer = new ComputerSystem();
+            // ARRANGE
+            ComputerSystem aComputerSystem = new ComputerSystem();
+            Computer aComputer = new Computer(aComputerSystem);
+            // ACT
+
+            // ASSERT
         }
     }
 }
